@@ -1,8 +1,13 @@
-# ported to Python3
+# Python3
 from sys import argv
 
 script = argv
 # gets the script name as an argument so python knows to operate on it
+
+# function definitions
+def closeFile():
+    print("I guess we're done here.")
+    theFile.close()
 
 targetFile = input("Create or open a file by typing a name: ")
 # ^ creates a file by giving it a name, or opens one with a matching name
@@ -42,10 +47,8 @@ if theAnswer == "y":
     print("Here's the whole file, with your stuff added:")
     print(theFile.read())
     # prints out the updated file contents
-    print("I guess we're done here.")
-    theFile.close()
+    closeFile()
 else:
-    print("I guess we're done here.")
-    theFile.close()
+    closeFile()
 
 # need to learn more about functions in python, to try condensing some of this code

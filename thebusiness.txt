@@ -12,3 +12,4 @@ TITLE: Record of Business Stuff
 9. Clean up this business list.
 9. Clean up this business list.
 10. Figure out how to remove lines from the business list.
+11. added a function to print a message then close the file
